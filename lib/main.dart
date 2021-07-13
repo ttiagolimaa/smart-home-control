@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Color(0xfffafcff),
         inputDecorationTheme: InputDecorationTheme(
           labelStyle: TextStyle(color: Color(0xffc9d4e4)),
           contentPadding: EdgeInsets.symmetric(vertical: 4, horizontal: 25),
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }

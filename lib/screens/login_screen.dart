@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:smarthome/utils/app_colors.dart';
 import 'package:smarthome/widgets/card_login_widget.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -15,15 +16,17 @@ class LoginScreen extends StatelessWidget {
         children: [
           Container(
             height: size.height * 0.7,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-                colors: [
-                  Color(0xff6f82e4),
-                  Color(0Xff9680d9),
-                ],
-              ),
+            child: Image.asset(
+              'assets/roomtv.jpg',
+              fit: BoxFit.cover,
+              alignment: Alignment.center,
+            ),
+          ),
+          Opacity(
+            opacity: 0.8,
+            child: Container(
+              height: size.height * 0.7,
+              decoration: BoxDecoration(gradient: AppColors.gradientPrimary),
             ),
           ),
           Align(
