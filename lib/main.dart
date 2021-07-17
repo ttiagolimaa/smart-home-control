@@ -1,8 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:smarthome/screens/home_screen.dart';
 import 'package:smarthome/screens/login_screen.dart';
+import 'package:smarthome/utils/app_colors.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Color(0xfffafcff),
         inputDecorationTheme: InputDecorationTheme(
-          labelStyle: TextStyle(color: Color(0xffc9d4e4)),
+          labelStyle: TextStyle(color: AppColors.iconColor),
           contentPadding: EdgeInsets.symmetric(vertical: 4, horizontal: 25),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }

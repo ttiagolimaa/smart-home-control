@@ -4,6 +4,7 @@ class AppColors {
   static Color textDark = Color(0xff5f4f7e);
   static Color textLight = Color(0xff6e81e3);
   static Color textDescription = Color(0xffacc0d6);
+  static Color iconColor = Color(0xffc9d4e4);
 
   static Gradient gradientAccent = LinearGradient(colors: [
     Color(0xffea5ab8),

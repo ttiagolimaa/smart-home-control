@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         iconSize: 30,
-        unselectedItemColor: Color(0xffc9d4e4),
+        unselectedItemColor: AppColors.iconColor,
         items: [
           BottomNavigationBarItem(
               icon: GradientIcon(

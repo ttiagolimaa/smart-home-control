@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smarthome/utils/app_colors.dart';
 
-import 'info_haader_home.dart';
+import 'info_header_home.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({

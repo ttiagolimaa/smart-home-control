@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smarthome/screens/home_screen.dart';
+import 'package:smarthome/utils/app_colors.dart';
 import 'package:validatorless/validatorless.dart';
 
 class CardLoginWidget extends StatefulWidget {
@@ -59,8 +60,10 @@ class _CardLoginWidgetState extends State<CardLoginWidget> {
                 foreground: Paint()
                   ..shader = LinearGradient(
                           colors: [Color(0xff7080e1), Color(0xffc46de2)])
-                      .createShader(Rect.fromLTWH(
-                          0.0, 0.0, widget.size.width, widget.size.height)),
+                      .createShader(
+                    Rect.fromLTWH(
+                        0.0, 0.0, widget.size.width, widget.size.height),
+                  ),
               ),
             ),
             SizedBox(height: 20),
@@ -86,7 +89,7 @@ class _CardLoginWidgetState extends State<CardLoginWidget> {
                         padding: const EdgeInsets.only(right: 20.0),
                         child: Icon(
                           Icons.email,
-                          color: Color(0xffc9d4e4),
+                          color: AppColors.iconColor,
                         ),
                       ),
                     ),
@@ -110,7 +113,7 @@ class _CardLoginWidgetState extends State<CardLoginWidget> {
                         padding: const EdgeInsets.only(right: 20.0),
                         child: Icon(
                           Icons.lock,
-                          color: Color(0xffc9d4e4),
+                          color: AppColors.iconColor,
                         ),
                       ),
                     ),
@@ -147,7 +150,7 @@ class _CardLoginWidgetState extends State<CardLoginWidget> {
                     children: [
                       Text(
                         'Don\'t have an account yet?',
-                        style: TextStyle(color: Color(0xffc9d4e4)),
+                        style: TextStyle(color: AppColors.iconColor),
                       ),
                       GestureDetector(
                         onTap: () {},
