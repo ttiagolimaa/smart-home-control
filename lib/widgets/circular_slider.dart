@@ -35,7 +35,6 @@ class _CircularSliderState extends State<CircularSlider> {
                 '-',
                 fontSize: 50,
                 fontWeight: FontWeight.w300,
-                // gradient: AppColors.gradientPrimary,
               ),
             ),
             SleekCircularSlider(
@@ -49,6 +48,7 @@ class _CircularSliderState extends State<CircularSlider> {
                 percentage: percentage,
               ),
               appearance: CircularSliderAppearance(
+                animationEnabled: false,
                 size: 230,
                 angleRange: 280,
                 startAngle: 130,
@@ -82,7 +82,6 @@ class _CircularSliderState extends State<CircularSlider> {
                 '+',
                 fontSize: 50,
                 fontWeight: FontWeight.w200,
-                // gradient: AppColors.gradientPrimary,
               ),
             ),
           ],

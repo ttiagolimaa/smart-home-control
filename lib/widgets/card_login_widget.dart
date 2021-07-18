@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smarthome/screens/home_screen.dart';
 import 'package:smarthome/utils/app_colors.dart';
+import 'package:smarthome/utils/text_gradient.dart';
 import 'package:validatorless/validatorless.dart';
 
 class CardLoginWidget extends StatefulWidget {
@@ -51,20 +52,11 @@ class _CardLoginWidgetState extends State<CardLoginWidget> {
         child: Column(
           children: [
             SizedBox(height: 20),
-            Text(
+            TextGradient(
               'Welcome home! Sign in to manage\nyour devices & accessories',
+              fontSize: 17,
+              fontWeight: FontWeight.w400,
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 17,
-                fontWeight: FontWeight.w400,
-                foreground: Paint()
-                  ..shader = LinearGradient(
-                          colors: [Color(0xff7080e1), Color(0xffc46de2)])
-                      .createShader(
-                    Rect.fromLTWH(
-                        0.0, 0.0, widget.size.width, widget.size.height),
-                  ),
-              ),
             ),
             SizedBox(height: 20),
             Form(

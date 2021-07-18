@@ -4,6 +4,8 @@ class TextGradient extends StatelessWidget {
   final String text;
   final double fontSize;
   final FontWeight fontWeight;
+  final TextAlign textAlign;
+
   final Gradient gradient = LinearGradient(
     colors: [
       // Colors.green,
@@ -20,7 +22,7 @@ class TextGradient extends StatelessWidget {
     Key? key,
     required this.fontSize,
     required this.fontWeight,
-    // required this.gradient,
+    this.textAlign = TextAlign.start,
   }) : super(key: key);
 
   @override
@@ -28,6 +30,7 @@ class TextGradient extends StatelessWidget {
     return ShaderMask(
       child: Text(
         text,
+        textAlign: textAlign,
         style: TextStyle(
           fontSize: fontSize,
           fontWeight: fontWeight,

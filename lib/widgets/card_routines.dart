@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:smarthome/utils/app_colors.dart';
 import 'package:smarthome/widgets/gradient_icon.dart';

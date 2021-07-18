@@ -18,9 +18,7 @@ class CustomRoundSliderTickMarkShape extends SliderTickMarkShape {
     required SliderThemeData sliderTheme,
     required bool isEnabled,
   }) {
-    assert(sliderTheme != null);
     assert(sliderTheme.trackHeight != null);
-    assert(isEnabled != null);
     // The tick marks are tiny circles. If no radius is provided, then the
     // radius is defaulted to be a fraction of the
     // [SliderThemeData.trackHeight]. The fraction is 1/4.
@@ -38,18 +36,10 @@ class CustomRoundSliderTickMarkShape extends SliderTickMarkShape {
     required Offset thumbCenter,
     required bool isEnabled,
   }) {
-    assert(context != null);
-    assert(center != null);
-    assert(parentBox != null);
-    assert(sliderTheme != null);
     assert(sliderTheme.disabledActiveTickMarkColor != null);
     assert(sliderTheme.disabledInactiveTickMarkColor != null);
     assert(sliderTheme.activeTickMarkColor != null);
     assert(sliderTheme.inactiveTickMarkColor != null);
-    assert(enableAnimation != null);
-    assert(textDirection != null);
-    assert(thumbCenter != null);
-    assert(isEnabled != null);
     // The paint color of the tick mark depends on its position relative
     // to the thumb and the text direction.
     Color? begin;

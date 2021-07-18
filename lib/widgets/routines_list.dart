@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:smarthome/utils/app_colors.dart';
 
 import 'card_routines.dart';
-import 'card_room.dart';
 
 class RoutinesList extends StatelessWidget {
   const RoutinesList({

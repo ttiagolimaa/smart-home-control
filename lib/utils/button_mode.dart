@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'package:smarthome/utils/app_colors.dart';
-import 'package:smarthome/utils/dotted_gradient.dart';
 import 'package:smarthome/widgets/gradient_icon.dart';
 
 class ButtomMode extends StatelessWidget {

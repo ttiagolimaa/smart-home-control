@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smarthome/utils/app_colors.dart';
 
 import 'card_recently.dart';
-import 'card_room.dart';
 
 class RecentlyDevices extends StatelessWidget {
   const RecentlyDevices({
@@ -53,9 +53,14 @@ class RecentlyDevices extends StatelessWidget {
                 device: 'HVAC',
               ),
               CardRecentlyWidget(
-                iconData: Icons.chair_outlined,
+                iconData: FontAwesomeIcons.lightbulb,
+                title: 'Bedroom',
+                device: 'Smooth lights',
+              ),
+              CardRecentlyWidget(
+                iconData: Icons.tv,
                 title: 'Living room',
-                device: 'HVAC',
+                device: 'Tv',
               ),
             ],
           ),

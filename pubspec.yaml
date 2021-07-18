@@ -32,7 +32,6 @@ dependencies:
   flutter_svg: ^0.22.0
   sleek_circular_slider: ^2.0.1
   dotted_border: ^2.0.0
-  syncfusion_flutter_sliders: ^19.2.47
 
 dev_dependencies:
   flutter_test:

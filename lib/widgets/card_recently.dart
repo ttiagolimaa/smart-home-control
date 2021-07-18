@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smarthome/utils/app_colors.dart';
 import 'package:smarthome/widgets/gradient_icon.dart';
 
@@ -23,7 +22,7 @@ class CardRecentlyWidget extends StatelessWidget {
       width: 155,
       child: Card(
         margin: EdgeInsets.only(right: 16, bottom: 4),
-        elevation: 2,
+        elevation: 1,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
         ),
@@ -37,7 +36,7 @@ class CardRecentlyWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GradientIcon(
-                    icon: Icons.air,
+                    icon: iconData,
                     size: 25,
                     gradient: AppColors.gradientPrimary,
                   ),

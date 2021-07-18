@@ -3,7 +3,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:smarthome/utils/custom_thumb_gradient_slider.dart';
 import 'package:smarthome/utils/custom_tick_mark_slider.dart';
 import 'package:smarthome/utils/custom_track_slider.dart';
-import 'package:syncfusion_flutter_sliders/sliders.dart';
 import 'package:smarthome/utils/app_colors.dart';
 import 'package:smarthome/utils/button_mode.dart';
 import 'package:smarthome/utils/custom_tab_indicator_gradient.dart';
@@ -50,6 +49,7 @@ class _RoomControlScreenState extends State<RoomControlScreen>
           elevation: 1,
           toolbarHeight: 120,
           backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          automaticallyImplyLeading: false,
           title: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 4),
             child: Column(
