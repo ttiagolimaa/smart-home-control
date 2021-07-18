@@ -14,12 +14,15 @@ class LoginScreen extends StatelessWidget {
       width: size.width,
       child: Stack(
         children: [
-          Container(
+          Positioned(
             height: size.height * 0.7,
-            child: Image.asset(
-              'assets/roomtv.jpg',
-              fit: BoxFit.cover,
-              alignment: Alignment.center,
+            child: Container(
+              height: size.height * 0.7,
+              child: Image.asset(
+                'assets/roomtv.jpg',
+                fit: BoxFit.cover,
+                alignment: Alignment.center,
+              ),
             ),
           ),
           Opacity(

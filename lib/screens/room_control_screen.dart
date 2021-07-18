@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:smarthome/utils/custom_thumb_gradient.dart';
+import 'package:smarthome/utils/custom_thumb_gradient_slider.dart';
 import 'package:smarthome/utils/custom_tick_mark_slider.dart';
 import 'package:smarthome/utils/custom_track_slider.dart';
 import 'package:syncfusion_flutter_sliders/sliders.dart';
 import 'package:smarthome/utils/app_colors.dart';
 import 'package:smarthome/utils/button_mode.dart';
-import 'package:smarthome/utils/tab_indicator_gradient_custom.dart';
+import 'package:smarthome/utils/custom_tab_indicator_gradient.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:smarthome/widgets/circular_slider.dart';
