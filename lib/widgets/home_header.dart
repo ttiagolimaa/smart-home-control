@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smarthome/utils/app_colors.dart';
+import 'package:smarthome/utils/curve_clipper_home.dart';
 
 import 'info_header_home.dart';
 
@@ -15,19 +16,22 @@ class HomeHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Container(
-          height: size.height * 0.25,
-          width: size.width,
-          padding: EdgeInsets.only(top: 20),
-          decoration: BoxDecoration(gradient: AppColors.gradientPrimary),
-          child: Opacity(
-            opacity: 0.07,
-            child: Text(
-              'Smart Home',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 63,
+        ClipPath(
+          clipper: CurveClipperHome(),
+          child: Container(
+            height: size.height * 0.35,
+            width: size.width,
+            padding: EdgeInsets.only(top: 20),
+            decoration: BoxDecoration(gradient: AppColors.gradientPrimary),
+            child: Opacity(
+              opacity: 0.07,
+              child: Text(
+                'Smart Home',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 63,
+                ),
               ),
             ),
           ),

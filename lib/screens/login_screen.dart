@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:smarthome/utils/app_colors.dart';
+import 'package:smarthome/utils/curve_clipper_login.dart';
 import 'package:smarthome/widgets/card_login_widget.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -15,21 +16,30 @@ class LoginScreen extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(
-            height: size.height * 0.7,
-            child: Container(
-              height: size.height * 0.7,
-              child: Image.asset(
-                'assets/roomtv.jpg',
-                fit: BoxFit.cover,
-                alignment: Alignment.center,
+            height: size.height * 0.8,
+            child: ClipPath(
+              clipper: CurveClipperLogin(),
+              child: Stack(
+                children: [
+                  Container(
+                    height: size.height * 0.8,
+                    child: Image.asset(
+                      'assets/roomtv.jpg',
+                      fit: BoxFit.cover,
+                      alignment: Alignment.center,
+                    ),
+                  ),
+                  Opacity(
+                    opacity: 0.8,
+                    child: Container(
+                      height: size.height * 0.8,
+                      width: size.width,
+                      decoration:
+                          BoxDecoration(gradient: AppColors.gradientPrimary),
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ),
-          Opacity(
-            opacity: 0.8,
-            child: Container(
-              height: size.height * 0.7,
-              decoration: BoxDecoration(gradient: AppColors.gradientPrimary),
             ),
           ),
           Align(
