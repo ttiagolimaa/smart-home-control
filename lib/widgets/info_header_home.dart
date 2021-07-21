@@ -15,7 +15,7 @@ class InfoHeaderHomeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      color: Colors.white,
+      width: 150,
       child: RichText(
         textAlign: TextAlign.center,
         text: TextSpan(

@@ -60,34 +60,55 @@ class HomeHeader extends StatelessWidget {
                 SizedBox(height: 20),
                 Container(
                   height: 160,
-                  child: Card(
-                    elevation: 1,
-                    margin: EdgeInsets.zero,
-                    color: Colors.grey.shade300,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25),
-                    ),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(25),
-                      child: GridView(
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                          mainAxisExtent: 80,
-                          crossAxisCount: 2,
-                          crossAxisSpacing: 0.4,
-                          mainAxisSpacing: 0.4,
+                  child: Stack(
+                    children: [
+                      Card(
+                        elevation: 1,
+                        margin: EdgeInsets.zero,
+                        color: Colors.white,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
                         ),
-                        children: [
-                          InfoHeaderHomeWidget(
-                              title: '24ºC', description: 'avg house temp'),
-                          InfoHeaderHomeWidget(
-                              title: '69%', description: 'humidity'),
-                          InfoHeaderHomeWidget(
-                              title: '36ºC', description: 'avg house temp'),
-                          InfoHeaderHomeWidget(
-                              title: '24ºC', description: 'avg house temp'),
-                        ],
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                InfoHeaderHomeWidget(
+                                    title: '24ºC',
+                                    description: 'avg house temp'),
+                                InfoHeaderHomeWidget(
+                                    title: '69%', description: 'humidity'),
+                              ],
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
+                              children: [
+                                InfoHeaderHomeWidget(
+                                    title: '36ºC',
+                                    description: 'avg house temp'),
+                                InfoHeaderHomeWidget(
+                                    title: '24ºC',
+                                    description: 'avg house temp'),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
+                      Align(
+                        alignment: Alignment.center,
+                        child: Divider(),
+                      ),
+                      RotatedBox(
+                        quarterTurns: 1,
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Divider(),
+                        ),
+                      ),
+                    ],
                   ),
                 )
               ],
